@@ -61,6 +61,19 @@ extract-text strips HTML → plain text → agent reads + summarizes
 | `search-and-read.sh` | Search + fetch top 3 results in one pass |
 | `setup-lightpanda.sh` | One-time Lightpanda installation |
 
+## vs. Other Web Search Skills
+
+| | [ddgr-skill](https://skills.sh/ysm-dev/ddgr-skill/ddgr) | [web-scraping](https://skills.sh/mindrally/skills/web-scraping) | **web-search (this)** |
+|---|---|---|---|
+| Skill type | Instructions only | General guidance | **Wrapper scripts** |
+| Web search | ✅ ddgr | ❌ | ✅ ddgr |
+| Page fetch | ❌ | ❌ | ✅ Lightpanda + curl fallback |
+| Text extraction | ❌ | ❌ (suggests BS4) | ✅ Python stdlib HTML parser |
+| JS rendering | ❌ | ❌ (manual Selenium) | ✅ Automatic via Lightpanda |
+| Combined workflow | ❌ | ❌ | ✅ `search-and-read` single pass |
+| API keys needed | None | None | None |
+| Agent-native output | Semi (ddgr raw JSON) | Depends on user script | **Clean plain text** |
+
 ## Credits
 
 - [ddgr](https://github.com/jarun/ddgr) by jarun — terminal DuckDuckGo client
