@@ -1,5 +1,6 @@
 # Web Search Skill
 
+[![skills.sh](https://skills.sh/b/KakkoiDev/web-search-skill)](https://skills.sh/KakkoiDev/web-search-skill)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Pi agent skill for searching the web and reading JS-rendered pages. No API keys needed.
