@@ -1,0 +1,10 @@
+{
+  "name": "web-search-skill",
+  "version": "2.0.0",
+  "description": "Pi skill for web search via DuckDuckGo + Lightpanda JS rendering. Registers search_web, fetch_url, and extract_text as first-class agent tools.",
+  "license": "MIT",
+  "pi": {
+    "extensions": ["./extension.ts"],
+    "skills": ["."]
+  }
+}
